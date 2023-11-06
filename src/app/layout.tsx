@@ -23,7 +23,7 @@ const acorn = localFont({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${poppins.variable} ${acorn.variable} h-full`}>
-      <body className="text-header bg-bgBody min-h-[100vh] h-full flex flex-col justify-between">
+      <body className="text-header bg-bgBody min-h-[100vh] h-full flex flex-col justify-between overflow-x-hidden">
         <div className="body-container">
           <Header />
           <div className="relative flex flex-col">{children}</div>
