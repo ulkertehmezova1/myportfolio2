@@ -22,7 +22,7 @@ const PageTitle = () => {
           <Image src={star1} alt="star" width={50} height={50} />
         </div>
       </div>
-      <div>
+      <div className="mb-9">
         <div className="grid text-center grid-cols-title mt-10">
           <p style={{ gridColumn: "2" }} className="text-center col-span-2">
             I&apos;m passionate about crafting experiences that are engaging, accessible, and user-centric.

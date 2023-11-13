@@ -38,7 +38,7 @@ const Header = () => {
           >
             {l.name}
             {l?.id === 1 && (
-              <span className="text-[10px] w-6 h-6  items-center justify-center rounded-md ml-2.5 p-0.5 px-2 shadow-myShadow">
+              <span className="text-[10px] w-6 h-6  items-center justify-center rounded-md ml-2.5 p-0.5 px-2 shadow-myShadow sm:hidden">
                 /
               </span>
             )}

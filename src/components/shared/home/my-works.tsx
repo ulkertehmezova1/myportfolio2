@@ -3,7 +3,7 @@ import WorksCard from "../cards/works-card";
 
 const MyWorks = () => {
   return (
-    <div>
+    <div className="mb-11">
       <WorksCard />
     </div>
   );

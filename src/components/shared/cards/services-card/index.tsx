@@ -5,7 +5,7 @@ import { services } from "@/mocks/my-services";
 
 const ServiceCard = () => {
   return (
-    <div className="grid gap-[30px] max-w-[1600px] xl:grid-cols-6 sm:grid-cols-2 md:grid-cols-4	">
+    <div className="grid gap-[30px] max-w-[1600px] xl:grid-cols-6 sm:grid-cols-2 md:grid-cols-4">
       {services?.map((servise, index) => (
         <a
           className="rounded-xl bg-white backdrop-blur-md saturate-150 no-underline overflow-hidden relative transition-all col-span-2 hover:-translate-y-3 hover:shadow-cardHoverShadow"
