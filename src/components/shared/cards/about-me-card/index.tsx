@@ -17,7 +17,7 @@ const Me: FC<IMe> = ({ onLinkClick }) => {
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <h2 className=" text-h2Size font-[700] font-acorn leading-none mb-3">I'm a Data Analytic based on Baku.</h2>
+          <h2 className=" text-h2Size font-[700] font-acorn leading-none mb-3">I&apos;m a Data Analytic based on Baku.</h2>
           <p className="text-secondary text-fontBody mb-4">
             Enthusiastic data analyst with over 1 years of experience in analyzing complex datasets, generating reports,
             and providing data-driven recommendations. Achievements include leading successful advertising campaigns,
