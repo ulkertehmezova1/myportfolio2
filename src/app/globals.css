@@ -20,3 +20,237 @@
 html {
   font-family: var(--font-poppins);
 }
+
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.137);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: hsla(172, 95%, 18%, 1);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsla(36, 31%, 90%, 1);
+  gap: 10px;
+  border: 3px solid #ffffff67;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+  color: hsla(36, 31%, 90%, 1);
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.slider .MuiSlider-thumb {
+  background-color: hsla(172, 95%, 18%, 1);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.steps-progress {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: hsla(171, 15%, 35%, 1);
+}
+
+.steps-progress-head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.steps-list {
+  width: 100%;
+  position: relative;
+  list-style: none;
+}
+
+.steps-list::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 100%;
+  border-left: 3px solid #fff;
+}
+
+.steps-item {
+  position: relative;
+  width: 50%;
+}
+
+.steps-item:hover:nth-child(even)::before,
+.steps-item:hover:nth-child(odd)::before {
+  height: 100%;
+}
+
+.steps-item:nth-child(even) {
+  padding-right: 20px;
+  text-align: right;
+  float: left;
+  clear: both;
+}
+
+.steps-item:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -3px;
+  width: 3px;
+  height: 0;
+  background-color: hsla(172, 95%, 18%, 1);
+  display: inline-block;
+  transition: all 255ms ease-in-out;
+}
+
+.steps-item:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -9px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.steps-item:nth-child(odd) {
+  float: right;
+  padding-left: 20px;
+  clear: both;
+}
+
+.steps-item:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background-color: hsla(172, 95%, 18%, 1);
+  display: inline-block;
+  transition: all 255ms ease-in-out;
+}
+
+.steps-item:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.steps-item:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+.steps-item .location {
+  margin-top: 0.2rem;
+}
+
+.steps-item .periode {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.ocean {
+  height: 100px; /* change the height of the waves here */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+.wave {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23003F7C'/%3E%3C/svg%3E");
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(2) {
+  bottom: 0;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.5;
+}
+
+.wave:nth-of-type(3) {
+  bottom: 0;
+  animation: wave 20s -1s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

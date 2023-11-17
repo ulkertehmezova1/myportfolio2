@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div
-      className="w-full text-footerGreen"
+      className="w-full text-footerGreen relative"
       style={{
         display: "grid",
         gridTemplateColumns: "1fr min(1440px, 94%) 1fr",
@@ -29,6 +29,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="ocean">
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
       </div>
     </div>
   );

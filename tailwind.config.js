@@ -35,6 +35,7 @@ module.exports = {
         white: "hsla(0, 0%, 100%, .3)",
         bgBody: "hsla(36, 31%, 90%, 1)",
         footerGreen: "hsla(171, 15%, 35%, 1)",
+        beige: "hsla(36, 31%, 90%, 1)",
       },
       fontFamily: {
         acorn: ["var(--font-acorn)"],
@@ -43,6 +44,8 @@ module.exports = {
     fontSize: {
       h1Size: "clamp(3.2rem, .5692rem + 8.238vw, 13.75rem)",
       fontLink: "clamp(.875rem, .7985rem + .3265vw, 1.125rem)",
+      h2Size: "clamp(1.875rem, 1.301rem + 2.449vw, 3.95rem)",
+      fontBody: "clamp(1rem, .8852rem + .4898vw, 1.275rem)",
     },
   },
   plugins: [],
