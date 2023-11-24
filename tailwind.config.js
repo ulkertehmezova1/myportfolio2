@@ -25,6 +25,7 @@ module.exports = {
       boxShadow: {
         myShadow: "inset 0 0 0 1.5px rgba(0,0,0,0.3)",
         cardHoverShadow: "inset 0 0 0 1.5px hsla(172, 95%, 18%, 1)",
+        xl: "5px 5px rgba(0, 0, 0, 0.2)",
       },
       colors: {
         secondary: "hsla(171, 15%, 35%, 1)",
@@ -45,7 +46,7 @@ module.exports = {
       h1Size: "clamp(3.2rem, .5692rem + 8.238vw, 13.75rem)",
       fontLink: "clamp(.875rem, .7985rem + .3265vw, 1.125rem)",
       h2Size: "clamp(1.875rem, 1.301rem + 2.449vw, 3.95rem)",
-      fontBody: "clamp(1rem, .8852rem + .4898vw, 1.275rem)",
+      fontBody: "clamp(1rem, .8852rem + .4898vw, 1.180rem)",
     },
   },
   plugins: [],
