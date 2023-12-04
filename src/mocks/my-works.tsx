@@ -1,41 +1,8 @@
 export const myWorks = [
   {
     id: 1,
-    name: "UI/Web&amp;Graph design for teenagers 11-17&#160;years old",
-    startDate: "04.11.2022",
-  },
-  {
-    id: 2,
-    name: "UX/UI Web-Design&#160;+ Mobile Design",
-  },
-  {
-    id: 3,
-    name: "Annual package Product+UX/UI+Graph designer&#160;2022",
-    startDate: "04.11.2022",
-  },
-  {
-    id: 4,
-    name: " Graphic Design",
-    startDate: "04.11.2022",
-  },
-  {
-    id: 5,
-    name: "Motion Design",
-    startDate: "04.11.2022",
-  },
-  {
-    id: 6,
-    name: "Front-end development&#160;+ jQuery&#160;+ CMS",
-    startDate: "04.11.2022",
-  },
-  {
-    id: 6,
-    name: "Front-end development&#160;+ jQuery&#160;+ CMS",
-    startDate: "04.11.2022",
-  },
-  {
-    id: 6,
-    name: "Front-end development&#160;+ jQuery&#160;+ CMS",
-    startDate: "04.11.2022",
+    name: "Report for Data Professional Survay Breakdown",
+    startDate: " \n20.11.2023",
+    path: "https://app.powerbi.com/reportEmbed?reportId=57804d45-eed1-4e4c-850b-095a517abeaf&autoAuth=true&ctid=a01ffad7-139b-4bd4-acb0-770415bcfbac",
   },
 ];

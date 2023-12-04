@@ -1,6 +1,17 @@
+"use client";
 import React from "react";
 
 const Footer = () => {
+  const handleLinkClick = () => {
+    const pdfUrl = "Narın-Təhməzova-Cv.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "document.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div
       className="w-full text-footerGreen relative"
@@ -15,17 +26,26 @@ const Footer = () => {
           <div>
             <ul className="space-y-3">
               <p className="text-header font-[600]">Elsewhere</p>
-              <li>Figma</li>
-              <li>Github</li>
-              <li>Posts</li>
-              <li>CV</li>
+              <li>
+                <a href="https://github.com/narintahmaz">Github</a>
+              </li>
+              <li>
+                <a href="/blog">Posts</a>
+              </li>
+              <li>
+                <button onClick={handleLinkClick} style={{ all: "unset", cursor: "pointer" }}>
+                  CV
+                </button>
+              </li>
             </ul>
           </div>
 
           <div>
             <p className="text-header font-[600]">Contact</p>
             <ul className="space-y-3">
-              <li>Message</li>
+              <li>
+                <a href="/contact">Message</a>
+              </li>
             </ul>
           </div>
         </div>

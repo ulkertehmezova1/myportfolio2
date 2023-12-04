@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Grid } from "@mui/material";
 import { FaRegMap } from "react-icons/fa";
@@ -5,6 +7,8 @@ import { IoPersonOutline } from "react-icons/io5";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaRegAddressBook } from "react-icons/fa";
 import { myContact } from "@/mocks/my-contact";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const Contact = () => {
   const renderIcon = (name: string) => {
@@ -22,8 +26,23 @@ const Contact = () => {
     }
   };
 
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_fhcuzou", "template_9uymm57", form.current, "M604qZe7RXfh1q-MN").then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    e.target.reset();
+  };
+  const form: any = useRef();
+
   return (
-    <div className="flex flex-col justify-center mt-20  relative">
+    <div className="flex flex-col justify-center mt-20 relative">
       <h1 className="text-h1Size font-acorn tracking-[-3px] sm:tracking-[-2px] font-[600] self-center justify-center">
         Contact
       </h1>
@@ -47,7 +66,7 @@ const Contact = () => {
           </div>
         </Grid>
         <Grid item xs={12} md={6}>
-          <form>
+          <form ref={form} onSubmit={handleSubmit}>
             <Grid container spacing={3}>
               <Grid item md={6} xs={12}>
                 <label>
@@ -55,6 +74,7 @@ const Contact = () => {
                   <span className="block">
                     {" "}
                     <input
+                      name="name"
                       size={40}
                       className="py-0 mt-[10px] px-[30px] w-full h-[60px] outline-none bg-[#fff] border-2 border-solid border-header rounded-[30px]"
                     />
@@ -67,6 +87,7 @@ const Contact = () => {
                   <span className="block">
                     {" "}
                     <input
+                      name="email"
                       size={40}
                       className="py-0 mt-[10px] px-[30px] w-full h-[60px] outline-none bg-[#fff] border-2 border-solid border-header rounded-[30px]"
                     />
@@ -79,6 +100,7 @@ const Contact = () => {
                   <span className="block">
                     {" "}
                     <input
+                      name="subject"
                       size={40}
                       className="py-0 mt-[10px] px-[30px] w-full h-[60px] outline-none bg-[#fff] border-2 border-solid border-header rounded-[30px]"
                     />
@@ -90,6 +112,7 @@ const Contact = () => {
                   <span className="pl-3">Your Message</span>
                   <span className="block">
                     <textarea
+                      name="message"
                       cols={40}
                       rows={10}
                       className="py-[20px] resize-none mt-[10px]  w-full h-[140px] outline-none bg-[#fff] border-2 border-solid border-header rounded-[30px]"
@@ -98,9 +121,10 @@ const Contact = () => {
                 </label>
               </Grid>
             </Grid>
-
             <div className="flex w-fill items-center justify-center mt-3">
-              <button className="button">Send Message</button>
+              <button className="button" type="submit">
+                Send Message
+              </button>
             </div>
           </form>
         </Grid>

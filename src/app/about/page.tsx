@@ -18,7 +18,7 @@ const About = () => {
   return (
     <div className=" flex  flex-col mt-20 ">
       <h1 className="text-h1Size font-acorn tracking-[-3px] sm:tracking-[-2px] font-[600] self-center justify-center">
-        I&apos;m Na&#769;r
+        I&apos;m Na&#769;rin
       </h1>
       <Me onLinkClick={handleLinkClick} />
       <Skills />

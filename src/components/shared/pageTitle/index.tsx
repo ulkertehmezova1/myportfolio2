@@ -25,7 +25,7 @@ const PageTitle = () => {
       <div className="mb-9">
         <div className="grid text-center grid-cols-title mt-10">
           <p style={{ gridColumn: "2" }} className="text-center col-span-2">
-            I&apos;m passionate about crafting experiences that are engaging, accessible, and user-centric.
+          Eager to contribute to a dynamic team and continue developing analytical skills in a professional setting.
           </p>
         </div>
       </div>

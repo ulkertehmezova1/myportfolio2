@@ -250,3 +250,14 @@ a:hover {
   background-color: hsla(172, 95%, 18%, 1);
   border: 1px solid hsla(172, 95%, 18%, 1);
 }
+
+.blog-content {
+  width: 100%;
+  display: flex;
+}
+
+.blog-content img {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}

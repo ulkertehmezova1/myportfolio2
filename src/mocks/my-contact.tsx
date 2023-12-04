@@ -2,7 +2,7 @@ export const myContact = [
   {
     id: 1,
     name: "Address",
-    description: "North Tower, Toronto, Canada",
+    description: "Azerbaijan, Baku",
   },
   {
     id: 2,
@@ -12,11 +12,11 @@ export const myContact = [
   {
     id: 3,
     name: "Email",
-    description: "zoe.miller@mydomain.com",
+    description: "narintahmazova@gmail.com",
   },
   {
     id: 4,
     name: "Phone",
-    description: "+1 (123) 456-7890",
+    description: "+994 (055) 561-56-16",
   },
 ];

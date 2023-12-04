@@ -18,18 +18,30 @@ const Post = ({ params }: { params: { post: string } }) => {
       <div className="flex flex-row gap-3 socialbtns">
         <ul>
           <li>
-            <FaInstagram className="fa" />
+            <a href="https://www.instagram.com">
+              <FaInstagram className="fa" />
+            </a>
           </li>
           <li>
-            <FaTwitter className="fa" />
+            <a href="https://www.twitter.com">
+              <FaTwitter className="fa" />
+            </a>
           </li>
           <li>
-            <FaFacebook className="fa" />
+            <a href="https://www.facebook.com">
+              <FaFacebook className="fa" />
+            </a>
           </li>
         </ul>
       </div>
-      <Image alt="blog_image" width={0} height={0} className="w-full h-auto" src={currentPost?.path} />
-      <p className="text-footerGreen leading-8 text-fontBody">{currentPost?.content}</p>
+      <Image alt="blog_image" width={0} height={0} className="w-[80%] h-auto" src={currentPost?.path} unoptimized />
+
+      <div className="blog-content">
+        <p
+          dangerouslySetInnerHTML={{ __html: currentPost?.content }}
+          className="text-footerGreen leading-8 text-fontBody whitespace-break-spaces"
+        ></p>
+      </div>
     </div>
   );
 };
