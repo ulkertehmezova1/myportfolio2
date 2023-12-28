@@ -263,3 +263,17 @@ margin: 0 auto;
 
 }
 
+
+.trigger {
+  content: url("../../public//images//trigger.png");
+
+  /* padding: 10rem 0 0 0; */
+}
+
+.old_new {
+  content:url("../../public/images/old_new.png")
+}
+
+.script {
+  content: url("../../public//images/trigger_script.png");
+}
