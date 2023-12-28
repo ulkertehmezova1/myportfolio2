@@ -251,13 +251,28 @@ a:hover {
   border: 1px solid hsla(172, 95%, 18%, 1);
 }
 
-.blog-content {
-  width: 100%;
-  display: flex;
+
+.post-content{
+display: flex;
+width: 100%;
+}
+.post-content img {
+width: 50%;
+height: auto;
+margin: 0 auto;
+
 }
 
-.blog-content img {
-  margin: 0 auto;
-  width: 50%;
-  height: auto;
+.trigger {
+  content: url("../../public//images//trigger.png");
+
+  /* padding: 10rem 0 0 0; */
+}
+
+.old_new {
+  content:url("../../public/images/old_new.png")
+}
+
+.script {
+  content: url("../../public//images/trigger_script.png");
 }
