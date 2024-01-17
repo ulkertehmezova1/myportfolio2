@@ -1,40 +1,39 @@
 export const skills = [
   {
     id: 1,
-    name: "SQL",
-    description: "A powerful and standardized language for managing and manipulating relational databases. ",
+    name: "HTML",
+    description: "Developed to create structured and semantically meaningful documents ",
     value: 85,
   },
   {
     id: 2,
-    name: "PL/SQL",
-    description: "For developing powerful stored procedures, triggers, and functions for Oracle databases. ",
+    name: "CSS",
+    description: "Fundamental technology in web development that complements HTML by providing a mechanism  ",
     value: 60,
   },
   {
     id: 3,
-    name: "Oracle Database",
-    description: "Designed to efficiently and securely store, manage, and retrieve data in a structured format",
+    name: "JAVASCRIPT",
+    description: "Versatile and dynamic programming language that plays a central role in modern web development",
     value: 60,
   },
   {
     id: 4,
-    name: "Microsoft Excell",
+    name: "REACT",
     description:
-      "Widely used for various tasks, including data analysis, calculation, charting, and financial modeling. ",
+      "Popular JavaScript library for building user interfaces, developed and maintained by Facebook.",
     value: 60,
   },
   {
     id: 5,
-    name: "Data Analysis",
-    description: "Process of inspecting, cleaning, transforming, and modeling data with discovering useful information.",
+    name: "NEXT JS",
+    description: "Open-source React framework that enables to build server-rendered React applications easily. .",
     value: 50,
   },
   {
     id: 9,
-    name: "Power BI",
-    description:
-      "Visualize and share insights from data in an organization, providing  reports and dashboards.",
+    name: "RESPONSIVE DESIGN",
+    description:"Web design approach focused on creating web pages that provide an optimal viewing. ",
     value: 50,
   },
 ];

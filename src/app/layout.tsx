@@ -3,6 +3,7 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
+import Head from "next/head";
 
 const poppins = Poppins({ subsets: ["latin"], display: "swap", weight: "500", variable: "--font-poppins" });
 
@@ -23,6 +24,10 @@ const acorn = localFont({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${poppins.variable} ${acorn.variable} flex h-full`}>
+       <Head>
+        <title>Ulker Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <body className="text-header bg-bgBody min-h-[100vh] h-full flex flex-col justify-between overflow-x-hidden max-w-full grow">
         <div className="body-container">
           <Header />

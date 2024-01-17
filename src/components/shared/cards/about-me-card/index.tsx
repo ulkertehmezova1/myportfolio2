@@ -17,14 +17,9 @@ const Me: FC<IMe> = ({ onLinkClick }) => {
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <h2 className=" text-h2Size font-[700] font-acorn leading-none mb-3">I&apos;m a Data Analytic based on Baku.</h2>
+          <h2 className=" text-h2Size font-[700] font-acorn leading-none mb-3">I&apos;m a Front-End Developer  based on Baku.</h2>
           <p className="text-secondary text-fontBody mb-4">
-            Enthusiastic data analyst with over 1 years of experience in analyzing complex datasets, generating reports,
-            and providing data-driven recommendations. Achievements include leading successful advertising campaigns,
-            implementing advanced statistical models, and driving data-driven decision making resulting in cost savings
-            and operational improvements. Passionate about leveraging data to uncover valuable insights and contribute
-            to business success. Excited about the opportunity to apply my skills and contribute to a dynamic data
-            analytics team.
+          Passionate Frontend Developer with over 2 year of hands-on experience in crafting seamless user interfaces and enhancing digital experiences. Proficient in translating design concepts into high-quality, responsive, and visually appealing web applications. Excels in collaborating with cross-functional teams to bring creative ideas to life and elevate user engagement. Adept at implementing frontend frameworks, optimizing performance, and ensuring cross-browser compatibility.
           </p>
           <button onClick={onLinkClick} className="button">
             Download CV

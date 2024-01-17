@@ -11,7 +11,7 @@ const Post = ({ params }: { params: { post: string } }) => {
         {currentPost?.name}
       </h1>
       <div className="text-footerGreen">
-        <span className="font-[500]">Written By Narin Tahmazova</span>
+        <span className="font-[500]">Written By Ulkar Tahmazova</span>
         <span className="mx-2 text-[#968d8e]">•</span>
         <span>{currentPost?.date}</span>
       </div>

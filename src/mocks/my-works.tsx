@@ -1,14 +1,32 @@
 export const myWorks = [
   {
     id: 1,
-    name: "Report for Data Professional Survay Breakdown",
-    startDate: " \n20.11.2023",
-    path: "https://app.powerbi.com/reportEmbed?reportId=57804d45-eed1-4e4c-850b-095a517abeaf&autoAuth=true&ctid=a01ffad7-139b-4bd4-acb0-770415bcfbac",
+    name: "e.customs.gov.az (Electronic Customs Services)",
+    startDate: " \n20.11.2022",
+    path: "https://e.customs.gov.az/",
   },
   {
     id: 2,
-    name: "Simple report for company payroll information",
+    name: "E-commerce Vegetables Shop",
     startDate: " \n28.11.2023",
-    path: "https://app.powerbi.com/reportEmbed?reportId=21486944-f622-4c93-8155-2274f891e046&autoAuth=true&ctid=a01ffad7-139b-4bd4-acb0-770415bcfbac",
+    path: "https://vegefoods-phi.vercel.app/",
   },
+  {
+    id: 3,
+    name: "Soft Solution Official Website",
+    startDate:" \n28.09.2021",
+    path:"https://softsolution.az/az/"
+  },
+  {
+    id: 4,
+    name: "Todo List",
+    startDate:" \n20.05.2021",
+    path:"https://ulkerth.netlify.app/"
+  },
+  {
+    id: 5,
+    name: "Advice Generator",
+    startDate: " \n10.05.2021",
+    path:"https://ulker-advice-generator.netlify.app/"
+  }
 ];

@@ -1,26 +1,32 @@
 export const stories = [
   {
     id: 1,
-    company: "Ministry of Justice of The Republic of Azerbaijan",
-    position: "E-court Specialist",
-    date: "07/2021-09/2023",
+    company: "The State Customs Committe of the Republic of Azerbaijan",
+    position: "Front-End Developer",
+    date: "11/2023-now",
+  },
+  {
+    id: 1,
+    company: "The State Agency for Mandotary Health Insurance",
+    position: "Front-End Developer",
+    date: "06/2022-09/2022",
   },
   {
     id: 2,
-    company: "Azerbaijan Industrial Bank",
-    position: "Intern",
-    date: "07/2019-09/2019",
+    company: "Soft Solution",
+    position: "Front-End Developer",
+    date: "09/2022-10/2022",
   },
   {
     id: 3,
-    company: "Azerbaijan State University of Economics",
-    position: "Bachelor of Commodity Science",
-    date: "09/2015-07/2019",
+    company: "Baku State University",
+    position: "Bachelor of Computer Science",
+    date: "09/2018-07/2022",
   },
   {
     id: 4,
     company: "5 No secondary school named after Samir Haciyev",
     position: "Student",
-    date: "2008-2019",
+    date: "2007-2018",
   },
 ];

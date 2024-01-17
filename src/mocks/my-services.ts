@@ -1,19 +1,19 @@
 export const services = [
   {
     id: 1,
-    title: "Data Analysis and Visualization",
+    title: "User Interface (UI) Design",
     desc: " I offer data analysis services, including data cleaning",
     path: "https://www.seanhalpin.xyz/resources/showcase/showcase_wirebox.png",
   },
   {
     id: 2,
-    title: "Data Cleaning and Preprocessing",
+    title: "Web Development",
     desc: " I have experience in data cleaning and preprocessing to ensure data accuracy and consistency.",
     path: "https://www.seanhalpin.xyz/resources/showcase/showcase_figchat.png",
   },
   {
     id: 3,
-    title: "Statistical Analysis",
+    title: "Cross-Browser Compatibility",
     desc: "I can conduct fundamental statistical analyses, such as descriptive statistics, t-tests, and correlations.",
     path: "https://www.seanhalpin.xyz/resources/showcase/showcase_outline.png",
   },
@@ -45,7 +45,7 @@ export const services = [
   },
   {
     id: 9,
-    title: "Predictive Modeling",
+    title: "Web Accessibility",
     desc: "Discuss your experience in building predictive models for forecasting",
     path: "",
   },

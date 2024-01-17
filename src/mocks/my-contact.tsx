@@ -12,11 +12,11 @@ export const myContact = [
   {
     id: 3,
     name: "Email",
-    description: "narintahmazova@gmail.com",
+    description: "ulkar.tahmazova@gmail.com",
   },
   {
     id: 4,
     name: "Phone",
-    description: "+994 (055) 561-56-16",
+    description: "+994 (055) 417-10-57",
   },
 ];

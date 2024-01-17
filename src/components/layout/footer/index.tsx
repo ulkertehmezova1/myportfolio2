@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   const handleLinkClick = () => {
-    const pdfUrl = "Narın-Təhməzova-Cv.pdf";
+    const pdfUrl = "Ulker_Tehmezova_CV.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "document.pdf";
@@ -21,13 +21,13 @@ const Footer = () => {
       }}
     >
       <div className="col-start-2 flex sm:flex-col justify-between sm:gap-4">
-        <div className="self-center font-acorn font-[500] sm:order-3">&copy; 2023 Narin Tehmezova</div>
+        <div className="self-center font-acorn font-[500] sm:order-3">&copy; 2023 Ulkar Tehmezova</div>
         <div className="flex gap-20 sm:self-center">
           <div>
             <ul className="space-y-3">
               <p className="text-header font-[600]">Elsewhere</p>
               <li>
-                <a href="https://github.com/narintahmaz">Github</a>
+                <a href="https://github.com/ulkertehmezova1">Github</a>
               </li>
               <li>
                 <a href="/blog">Posts</a>

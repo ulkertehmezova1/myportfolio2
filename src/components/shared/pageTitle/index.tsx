@@ -12,8 +12,8 @@ const PageTitle = () => {
         <div>
           <div className="text-header">
             <h1 className="leading-none tracking-[-3px] sm:tracking-[-2px] text-h1Size">
-              <span className="whitespace-nowrap"> Hi. I&apos;m Narin.</span>
-              <span className="md:whitespace-break-spaces sm:block sm:whitespace-nowrap">{`\nData Analytic`}</span>
+              <span className="whitespace-nowrap"> Hi. I&apos;m Ulka&#769;r.</span>
+              <span className="md:whitespace-break-spaces sm:block sm:whitespace-nowrap">{`\nA Developer`}</span>
             </h1>
           </div>
         </div>
@@ -25,7 +25,7 @@ const PageTitle = () => {
       <div className="mb-9">
         <div className="grid text-center grid-cols-title mt-10">
           <p style={{ gridColumn: "2" }} className="text-center col-span-2">
-          Eager to contribute to a dynamic team and continue developing analytical skills in a professional setting.
+          Eager to contribute to a dynamic team and continue developing beautiful websites in a professional setting.
           </p>
         </div>
       </div>
